@@ -4,7 +4,8 @@ public class App {
     public static void main(String[] args) throws Exception {
         Scanner in = new Scanner (System.in);
     jaakaappi olio1 = new jaakaappi(true,"Epoc",6, true);
-
+    
+    
     olio1.virtaPaalla();
     olio1.tulostaLampotila();
     olio1.oviAuki();
