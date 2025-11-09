@@ -3,20 +3,7 @@ import java.util.Scanner;
 public class App {
     public static void main(String[] args) throws Exception {
         Scanner in = new Scanner (System.in);
-        ArrayList<Integer>lampotila = new ArrayList<Integer>();
-    jaakaappi olio1 = new jaakaappi(true,"Epoc",lampotila.get(0));
-    
-    boolean ovi = false;
-
-    System.out.println("Aseta jaakaapin lampotila: ");
-    int ltarvo = Integer.parseInt(in.nextLine());
-    lampotila.add(0,ltarvo);
-
-    System.out.println("Onko ovi auki?");
-    String onko = in.nextLine();
-    if(onko.equalsIgnoreCase("on")){
-        ovi = true;
-    }else{ovi = false;}
+    jaakaappi olio1 = new jaakaappi(true,"Epoc",6, true);
 
     olio1.virtaPaalla();
     olio1.tulostaLampotila();
@@ -29,14 +16,14 @@ class jaakaappi{
     int lampoTila;
     boolean oviAuki;
 
-    public jaakaappi(boolean op, String m, Integer lT){ // taysiparametri muodostin
+    public jaakaappi(boolean op, String m, Integer lT, boolean oA){ // taysiparametri muodostin
         onkoPaalla = op;
         merkki = m;
         lampoTila = lT;
-        oviAuki = false;
+        oviAuki = oA;
     }
     public void tulostaLampotila(){
-        System.out.println("Lampotila on :" + lampoTila);
+        System.out.println("Lampotila on " + lampoTila);
     }
     public void virtaPaalla(){
         onkoPaalla = true;
