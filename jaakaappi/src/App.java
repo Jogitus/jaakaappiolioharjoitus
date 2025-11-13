@@ -35,8 +35,8 @@ public class App {
 }  // Main loppuu
 
 class jaakaappi{
-    boolean onkoPaalla;
-    String merkki;
+    //boolean onkoPaalla;
+    //String merkki;
     // int lampoTila = 0;
     // boolean oviAuki;
 
